@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Installer le poste
+Comment=Script d’installation automatique (USB)
+# "%k" = chemin complet de CE fichier .desktop
+# On lance le script "install_poste.sh" placé à côté du .desktop
+Exec=bash -c 'DIR="$(dirname "%k")"; exec bash "$DIR/script.sh"'
+Icon=system-software-install
+Terminal=true
